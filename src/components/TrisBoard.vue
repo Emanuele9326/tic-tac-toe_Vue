@@ -1,17 +1,17 @@
 <template>
   <div class="tris container mx-auto">
     <div class="row">
-      <div class="col">
-        <h1 v-if="title">{{ winner }}</h1>
-        <h2 v-if="count == 9">Nessun vincitore</h2>
+      <div class="text_esito col">
+        <h1 class="winner" v-if="title">{{ winner }}</h1>
+        <h2 v-if="count == 9 && !winnerBoard">Nessun vincitore</h2>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <h3 class="basic_color" :class="{ shift: turnX }">{{ nameplayerX }}</h3>
+        <h3 :class="{ shift: turnX }">{{ nameplayerX }}</h3>
       </div>
       <div class="col">
-        <h3 class="basic_color" :class="{ shift: turnY }">{{ nameplayerO }}</h3>
+        <h3 :class="{ shift: turnY }">{{ nameplayerO }}</h3>
       </div>
     </div>
     <div class="row">
@@ -19,10 +19,10 @@
         <div class="table_player">
           <div class="tictactoe-board">
             <div v-for="(n, i) in 3" v-bind:key="i">
-              <!--colonne-->
+              <!--columns-->
 
               <div v-for="(n, j) in 3" v-bind:key="j">
-                <!--righe-->
+                <!--lines-->
 
                 <cellBoard
                   @cell-player="performMove(j, i)"
@@ -83,7 +83,7 @@ export default {
 
   methods: {
     player3row(player) {
-      //orizzontale
+      //horizontals
       for (let i = 0; i < 3; i++) {
         if (
           this.board[i][0] == player &&
@@ -98,7 +98,7 @@ export default {
           this.turnY = false;
         }
       }
-      //verticale
+      //vertical
       for (let i = 0; i < 3; i++) {
         if (
           this.board[0][i] == player &&
@@ -113,7 +113,7 @@ export default {
           this.turnY = false;
         }
       }
-      //diagonale
+      //diagonal
       if (
         this.board[0][0] == player &&
         this.board[1][1] == player &&
@@ -138,7 +138,7 @@ export default {
       }
     },
     performMove(x, y) {
-      if (this.count < 9 && !this.winnerBoard) {
+      if (this.count < 9 && !this.winnerBoard && this.board[x][y] == "") {
         if (this.turnX && !this.turnY) {
           this.turnX = false;
           this.turnY = true;
@@ -172,9 +172,6 @@ export default {
 </script>
 
 <style>
-.basic {
-  color: black;
-}
 .shift {
   color: red;
 }
@@ -189,6 +186,13 @@ export default {
   margin: 20px auto;
 }
 
+.text_esito {
+  padding: 20px;
+}
+
+.winner {
+  color: yellow;
+}
 .col {
   text-align: center;
 }
@@ -200,12 +204,17 @@ export default {
 a,
 .green {
   text-decoration: none;
-  color: rgb(26, 13, 12);
+  font-weight: bold;
+  color: rgb(10, 10, 10);
   transition: 0.4s;
 }
 a:hover {
   text-decoration: none;
   background-color: hsla(60, 18%, 97%, 0);
   color: rgb(252, 250, 250);
+}
+.btn {
+  font-weight: bold;
+  color: rgb(10, 10, 10);
 }
 </style>
