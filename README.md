@@ -1,35 +1,69 @@
-# TRIS
+<h1 algin="center">Mini-sito del famoso gioco Tic Tac Toe (Tris)</h1>
 
-This template should help get you started developing with Vue 3 in Vite.
+<details open="open">
+  <summary>Sommario</summary>
+  <ol>
+    <li>
+      <a href="#informazioni-sul-progetto">Informazioni sul progetto</a>
+      <ul>
+        <li><a href="#costruito-con">Costruito con</a></li>
+      </ul>
+    </li>
+   <li><a href="#descrizione">Descrizione</a>
+     <ul>
+        <li><a href="#Download-e-testare-app-in-locale">Download e testare app in locale</a></li>
+      </ul>
+    </li>
+   <li><a href="#licenza">Licenza</a></li>
+  <ol>
+</details>
 
-## Recommended IDE Setup
+<!-- Informazioni sul progetto-->
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Informazioni sul progetto
 
-## Customize configuration
+La finalità di questo progetto è quella di sviluppare  un mini-sito del famoso gioco Tic Tac Toe (Tris) usando il framework Vue.js.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+L'applicazione è stata deployata su Netlify :
+- [Link Netlify] (https://incomparable-syrniki-79e8ad.netlify.app)</h4>
 
-## Project Setup
+#### <h3>Costruito con:</h3>
 
-```sh
-npm install
-```
+<b>Framework</b>:
 
-### Compile and Hot-Reload for Development
+- [Vue.js] (https://vuejs.org/)
+- [Bootstrap] (https://getbootstrap.com/)
 
-```sh
-npm run dev
-```
+<!--Descrizione-->
 
-### Compile and Minify for Production
+## Descrizione
 
-```sh
-npm run build
-```
+### Descrizione Funzionamento
+- Il gioco è stato svilupatto per giocare in due.
+Nella schermata iniziale del gioco si inseriscono i nomi dei due giocatori.
+![](img-README/img1.png) 
+- Al primo giocatore gli viene assegnato il simbolo "X", invece al secondo giocatore viene assegnato il simbolo "O". 
 
-### Lint with [ESLint](https://eslint.org/)
+![](img-README/img2.png)
+- Per ripulire il tavolo di gioco premere "RESTART".
+![](img-README/img3.png)
 
-```sh
-npm run lint
-```
+
+### Download e testare app in locale
+
+- Sul proprio dispositivo è necessario installare: 
+   - Nodo.js
+   - gestore di pachetti npm. 
+
+L'app può essere testata in locale eseguendo i seguenti passaggi:
+
+- Clonare il repository del progetto in locale 
+
+- Aprire la folder del progetto con un terminale, ed eseguire il comando "npm install".
+
+- Testare l'app in locale tramite il comando "npm run dev".
+![](img-README/img4.png)
+
+## Licenza
+
+    Distribuito con licenza MIT. Vedere "LICENSE" per ulteriori informazioni.
