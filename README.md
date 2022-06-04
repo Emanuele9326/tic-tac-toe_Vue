@@ -46,6 +46,7 @@ Nella schermata iniziale del gioco si inseriscono i nomi dei due giocatori.
 
 ![](img-README/img2.png)
 - Per ripulire il tavolo di gioco premere "RESTART".
+
 ![](img-README/img3.png)
 
 
@@ -62,6 +63,7 @@ L'app può essere testata in locale eseguendo i seguenti passaggi:
 - Aprire la folder del progetto con un terminale, ed eseguire il comando "npm install".
 
 - Testare l'app in locale tramite il comando "npm run dev".
+
 ![](img-README/img4.png)
 
 ## Licenza
