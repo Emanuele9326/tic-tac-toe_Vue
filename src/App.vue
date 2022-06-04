@@ -26,14 +26,6 @@ a,
   transition: 0.4s;
 }
 
-/*@media (hover: hover) {
-  a:hover {
-    text-decoration: none;
-    background-color: hsla(59, 44%, 31%, 0.8);
-    color: red;
-  }
-}*/
-
 @media (min-width: 1024px) {
   body {
     display: flex;
