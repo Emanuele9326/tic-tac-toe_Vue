@@ -1,4 +1,5 @@
 <h1 algin="center">Mini-sito del famoso gioco Tic Tac Toe (Tris)</h1>
+<h4>L'applicazione è stata deployata su Netlify :https://incomparable-syrniki-79e8ad.netlify.app</h4>
 
 <details open="open">
   <summary>Sommario</summary>
@@ -24,8 +25,7 @@
 
 La finalità di questo progetto è quella di sviluppare  un mini-sito del famoso gioco Tic Tac Toe (Tris) usando il framework Vue.js.
 
-L'applicazione è stata deployata su Netlify :
-- [Link Netlify] (https://incomparable-syrniki-79e8ad.netlify.app)</h4>
+
 
 #### <h3>Costruito con:</h3>
 
